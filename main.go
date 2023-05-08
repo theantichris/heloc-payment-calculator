@@ -19,3 +19,12 @@ func main() {
 	fmt.Printf("Interest Rate: %.2f\n", *interestRate)
 	fmt.Printf("Days In The Month: %d\n", *daysInMonth)
 }
+
+func calculatePayment(balance float64, interestRate float64, daysInMonth int) (payment float64) {
+	sum1 := balance * (interestRate / 100)
+	sum2 := sum1 / 365
+
+	payment = sum2 * float64(daysInMonth)
+
+	return payment
+}
