@@ -15,7 +15,7 @@ func main() {
 	daysInMonth := flag.Int("d", 30, "Number of days in the month.")
 	flag.Parse()
 
-	fmt.Printf("Days: %d\n", balance)
-	fmt.Printf("Interest Rate: %d\n", interestRate)
-	fmt.Printf("Days In The Month: %d\n", daysInMonth)
+	fmt.Printf("Days: %.2f\n", *balance)
+	fmt.Printf("Interest Rate: %.2f\n", *interestRate)
+	fmt.Printf("Days In The Month: %d\n", *daysInMonth)
 }
