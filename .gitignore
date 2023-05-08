@@ -7,6 +7,7 @@
 *.dll
 *.so
 *.dylib
+heloc-payment-calculator
 
 # Test binary, built with `go test -c`
 *.test
