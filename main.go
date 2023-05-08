@@ -18,6 +18,10 @@ func main() {
 	fmt.Printf("Days: %.2f\n", *balance)
 	fmt.Printf("Interest Rate: %.2f\n", *interestRate)
 	fmt.Printf("Days In The Month: %d\n", *daysInMonth)
+
+	payment := calculatePayment(*balance, *interestRate, *daysInMonth)
+
+	fmt.Printf("\nYou monthly payment will be $%.2f", payment)
 }
 
 func calculatePayment(balance float64, interestRate float64, daysInMonth int) (payment float64) {
