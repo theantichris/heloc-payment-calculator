@@ -21,7 +21,7 @@ func main() {
 
 	payment := calculatePayment(*balance, *interestRate, *daysInMonth)
 
-	fmt.Printf("\nYou monthly payment will be $%.2f", payment)
+	fmt.Printf("\nYour monthly payment will be $%.2f", payment)
 }
 
 func calculatePayment(balance float64, interestRate float64, daysInMonth int) (payment float64) {
