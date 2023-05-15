@@ -11,7 +11,7 @@ func Test_CalculatePayment(t *testing.T) {
 	sum2 := sum1 / 365
 	expected := sum2 * float64(daysInMonth)
 
-	actual := calculatePayment(balance, interestRate, daysInMonth)
+	actual := calculateMonthlyPayment(balance, interestRate, daysInMonth)
 
 	if expected != actual {
 		t.Errorf("Expected %.2f got %.2f", expected, actual)
